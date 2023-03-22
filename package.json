@@ -26,6 +26,7 @@
     "s-02ms": "npm run solution -- 02ms",
     "s-02": "npm run solution -- 02",
     "e-03": "npm run exercise -- 03",
+    "s-03ms": "npm run solution -- 03ms",
     "s-03": "npm run solution -- 03",
     "e-04": "npm run exercise -- 04",
     "s-04": "npm run solution -- 04",
