@@ -11,6 +11,9 @@ npm install
 # Starts the first exercise
 npm run exercise 01
 
+# Runs linting and tests my solution
+npm run solution 01ms
+
 # Runs linting and tests on the solution
 npm run solution 01
 ```
@@ -38,6 +41,8 @@ You'll know if you've succeeded because the tests will pass.
 
 **If you succeed**, or **if you get stuck**, unpause the video and check out the `*.solution.ts`. You can see if your solution is better or worse than mine!
 
+You can run `npm run solution 01ms` to run the tests and typechecking my solution.
+
 You can run `npm run solution 01` to run the tests and typechecking on the solution.
 
 ## Acknowledgements
@@ -51,6 +56,13 @@ Say thanks to Matt on [Twitter](https://twitter.com/mattpocockuk) or by joining 
 Alias: `npm run e 01`
 
 Run the corresponding `*.problem.ts` file.
+
+### `npm run solution 01ms`
+
+Alias: `npm run s 01ms`
+
+Run the corresponding `*.solution.ts` file. If there are multiple, it runs only the first one.
+
 
 ### `npm run solution 01`
 

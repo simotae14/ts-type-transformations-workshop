@@ -20,6 +20,7 @@
     "s": "npm run solution",
     "prepare": "node ./scripts/prepare-stackblitz.js",
     "e-01": "npm run exercise -- 01",
+    "s-01ms": "npm run solution -- 01ms",
     "s-01": "npm run solution -- 01",
     "e-02": "npm run exercise -- 02",
     "s-02": "npm run solution -- 02",
