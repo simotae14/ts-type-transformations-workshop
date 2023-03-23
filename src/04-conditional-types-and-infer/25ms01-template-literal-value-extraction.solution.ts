@@ -1,4 +1,5 @@
 import { Equal, Expect } from "../helpers/type-utils";
+import { S } from "ts-toolbelt";
 
 type Names = [
   "Matt Pocock",
@@ -8,7 +9,10 @@ type Names = [
   "BB King",
 ];
 
-type GetSurname<T> = unknown;
+// using S.Split
+type GetSurname<T extends string> = S.Split<T, " ">[1];
+
+type Pocock = GetSurname<Names[0]>
 
 type tests = [
   Expect<Equal<GetSurname<Names[0]>, "Pocock">>,
