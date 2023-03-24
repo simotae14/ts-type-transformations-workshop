@@ -12,7 +12,11 @@ type Route =
   | { route: "/admin"; search: {} }
   | { route: "/admin/users"; search: {} };
 
-type RoutesObject = unknown;
+type RoutesObject = {
+  [Obj in Route as Obj["route"]]: Obj["search"]
+};
+
+type Result = RoutesObject;
 
 type tests = [
   Expect<
