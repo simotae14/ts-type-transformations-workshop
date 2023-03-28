@@ -12,7 +12,9 @@ type Route =
   | { route: "/admin" }
   | { route: "/admin/users" };
 
-type RoutesObject = unknown;
+type RoutesObject = {
+  [UnionEle in Route as UnionEle["route"]]: UnionEle extends { search: infer S } ? S : never;
+};
 
 type tests = [
   Expect<
